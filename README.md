@@ -284,21 +284,189 @@ We use only labeled transactions for supervised learning, following standard pra
 **Figure 1: AUPRC Across Folds**
 
 ```
-RESMA v2 Deep:
-Fold 1: 0.9516 ████████████████████████████████████████████████
-Fold 2: 0.9552 ██████████████████████████████████████████████████
-Fold 3: 0.9540 █████████████████████████████████████████████████
-Fold 4: 0.9526 ████████████████████████████████████████████████
-Fold 5: 0.9412 ████████████████████████████████████████████
-Mean:   0.9509 ± 0.0050
+❯ python3 resmav2.1.py
+ERROR! Intel® Extension for PyTorch* needs to work with PyTorch 2.8.*, but PyTorch 2.9.1+cu128 is found. Please switch to the matching version and run again.
+🚀 RESMA v2: Optimized for Speed
+======================================================================
+📥 Descargando Elliptic Data Set...
+✅ Datos cargados: 46564 nodos, 83188 aristas
+   Ilícitos: 4545.0 (9.76%)
 
-GAT Baseline:
-Fold 1: 0.9224 ████████████████████████████████████████
-Fold 2: 0.9231 ████████████████████████████████████████
-Fold 3: 0.9247 █████████████████████████████████████████
-Fold 4: 0.9229 ████████████████████████████████████████
-Fold 5: 0.9090 ██████████████████████████████████████
-Mean:   0.9204 ± 0.0058
+🔬 Ejecutando experimentos (5-fold CV)...
+
+📊 GAT Baseline
+----------------------------------------------------------------------
+  Training 5 folds...
+    [GAT Baseline Fold 1] Epoch  20 | AUPRC: 0.8363 | Time: 74.1s
+    [GAT Baseline Fold 1] Epoch  40 | AUPRC: 0.8781 | Time: 159.1s
+    [GAT Baseline Fold 1] Epoch  60 | AUPRC: 0.8985 | Time: 237.4s
+    [GAT Baseline Fold 1] Epoch  80 | AUPRC: 0.9124 | Time: 310.6s
+    [GAT Baseline Fold 1] Epoch 100 | AUPRC: 0.9218 | Time: 384.0s
+  ✓ Fold 1: AUPRC=0.9224, AUROC=0.9838, F1=0.8622
+    [GAT Baseline Fold 2] Epoch  20 | AUPRC: 0.8407 | Time: 74.6s
+    [GAT Baseline Fold 2] Epoch  40 | AUPRC: 0.8845 | Time: 148.0s
+    [GAT Baseline Fold 2] Epoch  60 | AUPRC: 0.9001 | Time: 222.2s
+    [GAT Baseline Fold 2] Epoch  80 | AUPRC: 0.9140 | Time: 288.1s
+    [GAT Baseline Fold 2] Epoch 100 | AUPRC: 0.9230 | Time: 353.1s
+  ✓ Fold 2: AUPRC=0.9231, AUROC=0.9827, F1=0.8613
+    [GAT Baseline Fold 3] Epoch  20 | AUPRC: 0.8408 | Time: 65.1s
+    [GAT Baseline Fold 3] Epoch  40 | AUPRC: 0.8803 | Time: 131.2s
+    [GAT Baseline Fold 3] Epoch  60 | AUPRC: 0.8958 | Time: 196.1s
+    [GAT Baseline Fold 3] Epoch  80 | AUPRC: 0.9114 | Time: 261.0s
+    [GAT Baseline Fold 3] Epoch 100 | AUPRC: 0.9247 | Time: 326.1s
+  ✓ Fold 3: AUPRC=0.9247, AUROC=0.9817, F1=0.8643
+    [GAT Baseline Fold 4] Epoch  20 | AUPRC: 0.8499 | Time: 65.5s
+    [GAT Baseline Fold 4] Epoch  40 | AUPRC: 0.8835 | Time: 131.0s
+    [GAT Baseline Fold 4] Epoch  60 | AUPRC: 0.8999 | Time: 181.2s
+    [GAT Baseline Fold 4] Epoch  80 | AUPRC: 0.9135 | Time: 231.0s
+    [GAT Baseline Fold 4] Epoch 100 | AUPRC: 0.9229 | Time: 280.3s
+  ✓ Fold 4: AUPRC=0.9229, AUROC=0.9835, F1=0.8688
+    [GAT Baseline Fold 5] Epoch  20 | AUPRC: 0.8007 | Time: 49.3s
+    [GAT Baseline Fold 5] Epoch  40 | AUPRC: 0.8570 | Time: 98.8s
+    [GAT Baseline Fold 5] Epoch  60 | AUPRC: 0.8823 | Time: 148.1s
+    [GAT Baseline Fold 5] Epoch  80 | AUPRC: 0.8955 | Time: 197.1s
+    [GAT Baseline Fold 5] Epoch 100 | AUPRC: 0.9090 | Time: 247.1s
+  ✓ Fold 5: AUPRC=0.9090, AUROC=0.9796, F1=0.8450
+  ✅ AUPRC: 0.9204 ± 0.0058
+     AUROC: 0.9823 ± 0.0015
+     F1:    0.8603 ± 0.0081
+     Time:  1590.8s (26.5 min)
+
+📊 RESMA v2 Fast
+----------------------------------------------------------------------
+  Training 5 folds...
+    [RESMA v2 Fast Fold 1] Epoch  20 | AUPRC: 0.7863 | Time: 9.3s
+    [RESMA v2 Fast Fold 1] Epoch  40 | AUPRC: 0.8761 | Time: 18.5s
+    [RESMA v2 Fast Fold 1] Epoch  60 | AUPRC: 0.9097 | Time: 27.7s
+    [RESMA v2 Fast Fold 1] Epoch  80 | AUPRC: 0.9212 | Time: 36.9s
+    [RESMA v2 Fast Fold 1] Epoch 100 | AUPRC: 0.9309 | Time: 46.1s
+  ✓ Fold 1: AUPRC=0.9328, AUROC=0.9810, F1=0.8856
+    [RESMA v2 Fast Fold 2] Epoch  20 | AUPRC: 0.7798 | Time: 9.3s
+    [RESMA v2 Fast Fold 2] Epoch  40 | AUPRC: 0.8750 | Time: 18.5s
+    [RESMA v2 Fast Fold 2] Epoch  60 | AUPRC: 0.9072 | Time: 27.7s
+    [RESMA v2 Fast Fold 2] Epoch  80 | AUPRC: 0.9304 | Time: 37.0s
+    [RESMA v2 Fast Fold 2] Epoch 100 | AUPRC: 0.9393 | Time: 46.2s
+  ✓ Fold 2: AUPRC=0.9393, AUROC=0.9834, F1=0.8831
+    [RESMA v2 Fast Fold 3] Epoch  20 | AUPRC: 0.7592 | Time: 9.1s
+    [RESMA v2 Fast Fold 3] Epoch  40 | AUPRC: 0.8506 | Time: 18.3s
+    [RESMA v2 Fast Fold 3] Epoch  60 | AUPRC: 0.8976 | Time: 27.4s
+    [RESMA v2 Fast Fold 3] Epoch  80 | AUPRC: 0.9190 | Time: 36.5s
+    [RESMA v2 Fast Fold 3] Epoch 100 | AUPRC: 0.9296 | Time: 45.6s
+  ✓ Fold 3: AUPRC=0.9296, AUROC=0.9804, F1=0.8787
+    [RESMA v2 Fast Fold 4] Epoch  20 | AUPRC: 0.7864 | Time: 9.1s
+    [RESMA v2 Fast Fold 4] Epoch  40 | AUPRC: 0.8755 | Time: 18.2s
+    [RESMA v2 Fast Fold 4] Epoch  60 | AUPRC: 0.9107 | Time: 27.3s
+    [RESMA v2 Fast Fold 4] Epoch  80 | AUPRC: 0.9290 | Time: 36.5s
+    [RESMA v2 Fast Fold 4] Epoch 100 | AUPRC: 0.9365 | Time: 45.8s
+  ✓ Fold 4: AUPRC=0.9379, AUROC=0.9849, F1=0.8800
+    [RESMA v2 Fast Fold 5] Epoch  20 | AUPRC: 0.7293 | Time: 9.1s
+    [RESMA v2 Fast Fold 5] Epoch  40 | AUPRC: 0.8184 | Time: 18.2s
+    [RESMA v2 Fast Fold 5] Epoch  60 | AUPRC: 0.8760 | Time: 27.4s
+    [RESMA v2 Fast Fold 5] Epoch  80 | AUPRC: 0.9030 | Time: 36.7s
+    [RESMA v2 Fast Fold 5] Epoch 100 | AUPRC: 0.9190 | Time: 45.9s
+  ✓ Fold 5: AUPRC=0.9190, AUROC=0.9805, F1=0.8674
+  ✅ AUPRC: 0.9317 ± 0.0072
+     AUROC: 0.9820 ± 0.0018
+     F1:    0.8790 ± 0.0063
+     Time:  229.7s (3.8 min)
+
+📊 RESMA v2 Standard
+----------------------------------------------------------------------
+  Training 5 folds...
+    [RESMA v2 Standard Fold 1] Epoch  20 | AUPRC: 0.8010 | Time: 16.1s
+    [RESMA v2 Standard Fold 1] Epoch  40 | AUPRC: 0.8941 | Time: 32.1s
+    [RESMA v2 Standard Fold 1] Epoch  60 | AUPRC: 0.9273 | Time: 48.3s
+    [RESMA v2 Standard Fold 1] Epoch  80 | AUPRC: 0.9375 | Time: 64.3s
+    [RESMA v2 Standard Fold 1] Epoch 100 | AUPRC: 0.9472 | Time: 80.4s
+  ✓ Fold 1: AUPRC=0.9473, AUROC=0.9849, F1=0.9024
+    [RESMA v2 Standard Fold 2] Epoch  20 | AUPRC: 0.7365 | Time: 16.1s
+    [RESMA v2 Standard Fold 2] Epoch  40 | AUPRC: 0.8597 | Time: 32.1s
+    [RESMA v2 Standard Fold 2] Epoch  60 | AUPRC: 0.9163 | Time: 48.1s
+    [RESMA v2 Standard Fold 2] Epoch  80 | AUPRC: 0.9380 | Time: 64.2s
+    [RESMA v2 Standard Fold 2] Epoch 100 | AUPRC: 0.9488 | Time: 80.2s
+  ✓ Fold 2: AUPRC=0.9488, AUROC=0.9859, F1=0.8995
+    [RESMA v2 Standard Fold 3] Epoch  20 | AUPRC: 0.7955 | Time: 16.0s
+    [RESMA v2 Standard Fold 3] Epoch  40 | AUPRC: 0.8957 | Time: 32.1s
+    [RESMA v2 Standard Fold 3] Epoch  60 | AUPRC: 0.9240 | Time: 48.1s
+    [RESMA v2 Standard Fold 3] Epoch  80 | AUPRC: 0.9416 | Time: 64.3s
+    [RESMA v2 Standard Fold 3] Epoch 100 | AUPRC: 0.9466 | Time: 80.4s
+  ✓ Fold 3: AUPRC=0.9485, AUROC=0.9862, F1=0.9003
+    [RESMA v2 Standard Fold 4] Epoch  20 | AUPRC: 0.7631 | Time: 16.0s
+    [RESMA v2 Standard Fold 4] Epoch  40 | AUPRC: 0.8901 | Time: 32.0s
+    [RESMA v2 Standard Fold 4] Epoch  60 | AUPRC: 0.9280 | Time: 48.3s
+    [RESMA v2 Standard Fold 4] Epoch  80 | AUPRC: 0.9453 | Time: 64.4s
+    [RESMA v2 Standard Fold 4] Epoch 100 | AUPRC: 0.9554 | Time: 80.4s
+  ✓ Fold 4: AUPRC=0.9554, AUROC=0.9878, F1=0.9125
+    [RESMA v2 Standard Fold 5] Epoch  20 | AUPRC: 0.7687 | Time: 16.1s
+    [RESMA v2 Standard Fold 5] Epoch  40 | AUPRC: 0.8587 | Time: 32.3s
+    [RESMA v2 Standard Fold 5] Epoch  60 | AUPRC: 0.8941 | Time: 48.4s
+    [RESMA v2 Standard Fold 5] Epoch  80 | AUPRC: 0.9177 | Time: 64.4s
+    [RESMA v2 Standard Fold 5] Epoch 100 | AUPRC: 0.9374 | Time: 80.5s
+  ✓ Fold 5: AUPRC=0.9377, AUROC=0.9826, F1=0.8877
+  ✅ AUPRC: 0.9475 ± 0.0057
+     AUROC: 0.9855 ± 0.0017
+     F1:    0.9005 ± 0.0079
+     Time:  401.9s (6.7 min)
+
+📊 RESMA v2 Deep
+----------------------------------------------------------------------
+  Training 5 folds...
+    [RESMA v2 Deep Fold 1] Epoch  20 | AUPRC: 0.7429 | Time: 23.1s
+    [RESMA v2 Deep Fold 1] Epoch  40 | AUPRC: 0.8737 | Time: 46.1s
+    [RESMA v2 Deep Fold 1] Epoch  60 | AUPRC: 0.9263 | Time: 69.1s
+    [RESMA v2 Deep Fold 1] Epoch  80 | AUPRC: 0.9428 | Time: 93.2s
+    [RESMA v2 Deep Fold 1] Epoch 100 | AUPRC: 0.9516 | Time: 116.3s
+  ✓ Fold 1: AUPRC=0.9516, AUROC=0.9860, F1=0.9035
+    [RESMA v2 Deep Fold 2] Epoch  20 | AUPRC: 0.7443 | Time: 23.3s
+    [RESMA v2 Deep Fold 2] Epoch  40 | AUPRC: 0.8489 | Time: 46.4s
+    [RESMA v2 Deep Fold 2] Epoch  60 | AUPRC: 0.9257 | Time: 69.5s
+    [RESMA v2 Deep Fold 2] Epoch  80 | AUPRC: 0.9468 | Time: 92.6s
+    [RESMA v2 Deep Fold 2] Epoch 100 | AUPRC: 0.9534 | Time: 115.7s
+  ✓ Fold 2: AUPRC=0.9552, AUROC=0.9861, F1=0.9126
+    [RESMA v2 Deep Fold 3] Epoch  20 | AUPRC: 0.7757 | Time: 23.1s
+    [RESMA v2 Deep Fold 3] Epoch  40 | AUPRC: 0.8806 | Time: 46.1s
+    [RESMA v2 Deep Fold 3] Epoch  60 | AUPRC: 0.9188 | Time: 69.2s
+    [RESMA v2 Deep Fold 3] Epoch  80 | AUPRC: 0.9437 | Time: 92.3s
+    [RESMA v2 Deep Fold 3] Epoch 100 | AUPRC: 0.9540 | Time: 115.4s
+  ✓ Fold 3: AUPRC=0.9540, AUROC=0.9873, F1=0.9083
+    [RESMA v2 Deep Fold 4] Epoch  20 | AUPRC: 0.7154 | Time: 23.2s
+    [RESMA v2 Deep Fold 4] Epoch  40 | AUPRC: 0.8258 | Time: 46.3s
+    [RESMA v2 Deep Fold 4] Epoch  60 | AUPRC: 0.9031 | Time: 69.4s
+    [RESMA v2 Deep Fold 4] Epoch  80 | AUPRC: 0.9426 | Time: 92.8s
+    [RESMA v2 Deep Fold 4] Epoch 100 | AUPRC: 0.9526 | Time: 115.9s
+  ✓ Fold 4: AUPRC=0.9526, AUROC=0.9863, F1=0.9110
+    [RESMA v2 Deep Fold 5] Epoch  20 | AUPRC: 0.7617 | Time: 23.1s
+    [RESMA v2 Deep Fold 5] Epoch  40 | AUPRC: 0.8640 | Time: 46.2s
+    [RESMA v2 Deep Fold 5] Epoch  60 | AUPRC: 0.8988 | Time: 69.4s
+    [RESMA v2 Deep Fold 5] Epoch  80 | AUPRC: 0.9240 | Time: 92.4s
+    [RESMA v2 Deep Fold 5] Epoch 100 | AUPRC: 0.9412 | Time: 116.3s
+  ✓ Fold 5: AUPRC=0.9412, AUROC=0.9845, F1=0.8960
+  ✅ AUPRC: 0.9509 ± 0.0050
+     AUROC: 0.9860 ± 0.0009
+     F1:    0.9063 ± 0.0060
+     Time:  579.7s (9.7 min)
+
+
+======================================================================
+🏆 RESULTADOS FINALES
+======================================================================
+👑   RESMA v2 Deep        | AUPRC: 0.9509 ± 0.0050 | 9.7min
+2.  RESMA v2 Standard    | AUPRC: 0.9475 ± 0.0057 | 6.7min
+3.  RESMA v2 Fast        | AUPRC: 0.9317 ± 0.0072 | 3.8min
+4.  GAT Baseline         | AUPRC: 0.9204 ± 0.0058 | 26.5min
+
+======================================================================
+📊 ANÁLISIS FINAL
+======================================================================
+
+🎉 ¡RESMA v2 Deep VENCIÓ A GAT!
+   Mejora: +3.05%
+   AUPRC: 0.9509 vs 0.9204
+
+⏱  Tiempo total: 46.7 minutos
+
+✅ Experimento completado!
+
 ```
 
 Consistent performance across all folds demonstrates model robustness.
