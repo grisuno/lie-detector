@@ -1,4 +1,4 @@
-# RESMA v2: Hybrid E8-GAT Architecture for Illicit Transaction Detection
+# RESMA v2: An E8-Inspired Cached Spectral–Attention Architecture for Illicit Transaction Detection
 
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/2513b24b-7238-4dbf-a32f-3856ad325a5f" />
 
@@ -67,12 +67,12 @@ Our goal is to learn a function $f: G \rightarrow \mathbb{R}^n$ that assigns an 
 
 ### 3.2 E8 Lattice Layer
 
-The E8 lattice $\Lambda_8$ is the unique lattice in $\mathbb{R}^8$ with optimal packing density. While we don't explicitly construct 8-dimensional embeddings, we leverage the E8 lattice structure through specialized message passing.
+We employ a cached, symmetric, degree-normalized spectral aggregation operator, which we refer to as E8-inspired due to its emphasis on dense symmetry and structured message passing, rather than a literal implementation of the E8 lattice.
 
 **Standard GCN Aggregation:**
 $$h_v^{(l+1)} = \sigma\left(W^{(l)} \sum_{u \in \mathcal{N}(v)} \frac{h_u^{(l)}}{\sqrt{d_u d_v}}\right)$$
 
-**E8 Lattice Aggregation:**
+**E8 Lattice inspired Aggregation:**
 $$h_v^{(l+1)} = \sigma\left(W^{(l)} \sum_{u \in \mathcal{N}(v)} \alpha_{uv} \frac{h_u^{(l)}}{\sqrt{d_u d_v}}\right)$$
 
 where $\alpha_{uv} = \text{sigmoid}(\theta_{uv})$ are learnable edge weights initialized from the E8 lattice structure. The key innovation is pre-computing the normalized sparse adjacency matrix once:
@@ -612,6 +612,8 @@ Our work demonstrates the importance of:
 The E8 lattice aggregation provides a powerful geometric prior for graph-structured fraud detection, and its fusion with attention mechanisms represents a promising direction for future GNN architectures.
 
 We hope this work establishes a new standard for both performance and experimental rigor in financial fraud detection research.
+
+Note: Despite the original naming, the “E8” layer in RESMA v2 should be understood as a cached, normalized spectral aggregation operator rather than a formal implementation of the E8 lattice. The performance gains stem from efficient spectral message passing and its fusion with attention mechanisms, not from explicit Lie-theoretic or physical modeling.
 
 ---
 
