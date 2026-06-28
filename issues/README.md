@@ -1,0 +1,22 @@
+# Repository: lie-detector
+
+**Description:** Lie Detector: E8-Division is a high-performance Graph Neural Network (GNN) framework developed for the real-time detection of illicit activities and "deceptive" transactions in blockchain networks.
+
+| Metric | Value |
+|--------|-------|
+| ⭐ Stars | 2 |
+| 📥 Clones (last 14 days) | 5 |
+| 🟢 Open Issues | 0 |
+| 📋 Total Issues | 0 |
+| 🛡 Dependabot Open Alerts | 1 |
+| 🔍 CodeScan Open Alerts | 1 |
+
+## Issues
+
+## Dependabot Alerts
+- [Dependabot #0](./dependabot/alert_0.md) - unknown (N/A) - unknown
+
+## Code Scanning Alerts
+- [CodeScan #0](./codescan/alert_0.md) - N/A (N/A) - unknown
+
+Total issues downloaded: 0
