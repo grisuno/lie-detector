@@ -1,0 +1,260 @@
+{
+  "concepts": [
+    {
+      "name": "forward",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 10,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "gat",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 10,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "optimized",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 7,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "resmav2",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "version",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "app",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 5,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "fusion",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 5,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "baseline",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "fast",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "layers",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "standard",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "layer",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "caching",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "cross",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "data",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "deep",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "deeper",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "efficiency",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "elliptic",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "evaluate",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "improvements",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "load",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "minimal",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "model",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "overhead",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "train",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "validate",
+      "files": [
+        "app.py",
+        "app_timestamp.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "relations": [],
+  "dialectic": [
+    "Thesis: `app` centralizes 2 files; Antithesis: `baseline` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `app` centralizes 2 files; Antithesis: `caching` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `app` centralizes 2 files; Antithesis: `cross` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `app` centralizes 2 files; Antithesis: `data` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `app` centralizes 2 files; Antithesis: `deep` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `app` centralizes 2 files; Antithesis: `deeper` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `app` centralizes 2 files; Antithesis: `efficiency` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `app` centralizes 2 files; Antithesis: `elliptic` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `app` centralizes 2 files; Antithesis: `evaluate` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `app` centralizes 2 files; Antithesis: `fast` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?"
+  ]
+}
