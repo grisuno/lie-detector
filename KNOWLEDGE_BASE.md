@@ -11,7 +11,7 @@
 
 **Total Files Parsed:** 3 | **Total Symbols Extracted:** 36 | **Total Imports:** 40
 
-<!-- ranking_model: v1.0 | weights: {ppr:0.45,auth:0.2,test:0.15,doc:0.1,fresh:0.1} | alpha:0.85 | commit:1e0fd0b | date:2026-07-18 -->
+<!-- ranking_model: v1.0 | weights: {ppr:0.45,auth:0.2,test:0.15,doc:0.1,fresh:0.1} | alpha:0.85 | commit:05a4468 | date:2026-07-18 -->
 
 
 ## Table of Contents
@@ -24,13 +24,12 @@
 6. [Hotspot Analysis](#hotspot-analysis)
 7. [Change Impact Analysis](#change-impact-analysis)
 8. [Suggested Linting Rules](#suggested-linting-rules)
-9. [Concept Graph](#concept-graph)
-10. [Orphans](#orphans)
-11. [Query Recipes](#query-recipes)
-12. [Structural Knowledge Map](#structural-knowledge-map)
-13. [UML Class Diagram](#uml-class-diagram)
-14. [Code Property Graph](#code-property-graph)
-15. [Architecture Reference](#architecture-reference)
+9. [Orphans](#orphans)
+10. [Query Recipes](#query-recipes)
+11. [Structural Knowledge Map](#structural-knowledge-map)
+12. [UML Class Diagram](#uml-class-diagram)
+13. [Code Property Graph](#code-property-graph)
+14. [Architecture Reference](#architecture-reference)
     - [PY (2 files)](#py-2-files)
     - [SH (1 files)](#sh-1-files)
 
@@ -119,57 +118,6 @@ Files ranked by combined complexity (symbol count) and centrality (connection co
 | `app.py` | 1.000 | 0.667 | 0.800 | 18 | 16 |
 | `app_timestamp.py` | 1.000 | 1.000 | 1.000 | 18 | 24 |
 | `install.sh` | 0.000 | 0.000 | 0.000 | 0 | 0 |
-
----
-
-## Concept Graph
-
-Semantic second-brain layer: nouns are concept nodes, verbs are edges. Each noun maps atomically to a file set (EXTRACTED); each verb aggregates structural imports, calls, and inherits into consumes, invokes, extends, depends_on, or bridges (INFERRED).
-
-**27 concepts, 0 relations.**
-
-| Concept | Files | Mentions |
-|---------|-------|----------|
-| `forward` | 2 | 10 |
-| `gat` | 2 | 10 |
-| `optimized` | 2 | 7 |
-| `resmav2` | 2 | 6 |
-| `version` | 2 | 6 |
-| `app` | 2 | 5 |
-| `fusion` | 2 | 5 |
-| `baseline` | 2 | 4 |
-| `fast` | 2 | 4 |
-| `layers` | 2 | 4 |
-| `standard` | 2 | 4 |
-| `layer` | 2 | 3 |
-| `caching` | 2 | 2 |
-| `cross` | 2 | 2 |
-| `data` | 2 | 2 |
-| `deep` | 2 | 2 |
-| `deeper` | 2 | 2 |
-| `efficiency` | 2 | 2 |
-| `elliptic` | 2 | 2 |
-| `evaluate` | 2 | 2 |
-| `improvements` | 2 | 2 |
-| `load` | 2 | 2 |
-| `minimal` | 2 | 2 |
-| `model` | 2 | 2 |
-| `overhead` | 2 | 2 |
-| `train` | 2 | 2 |
-| `validate` | 2 | 2 |
-
-### Dialectic Prompts
-
-- Thesis: `app` centralizes 2 files; Antithesis: `baseline` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `app` centralizes 2 files; Antithesis: `caching` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `app` centralizes 2 files; Antithesis: `cross` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `app` centralizes 2 files; Antithesis: `data` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `app` centralizes 2 files; Antithesis: `deep` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `app` centralizes 2 files; Antithesis: `deeper` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `app` centralizes 2 files; Antithesis: `efficiency` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `app` centralizes 2 files; Antithesis: `elliptic` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `app` centralizes 2 files; Antithesis: `evaluate` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `app` centralizes 2 files; Antithesis: `fast` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
 
 ---
 

@@ -1,8 +1,8 @@
 # Subsystem: root
 
 ## app.py
-- Doc: Autor: Gris Iscomeback Correo electrónico: grisiscomeback[at]gmail[dot]com Fecha de creación...
 - Layer: utility
+- Doc: app.py  Autor: Gris Iscomeback Correo electrónico: grisiscomeback[at]gmail[dot]com Fecha de creación: 24/12/2025 Licenci
 - Language: py
 - Symbols:
   - `OptimizedE8Layer` (class, line 49) `class OptimizedE8Layer(Module)`
@@ -25,7 +25,6 @@
   - `forward` (method, line 220) `def forward(self, x, edge_index)`
 
 ## app_timestamp.py
-- Doc: OptimizedE8Layer: Optimized E8 with caching and efficiency improvements
 - Layer: utility
 - Language: py
 - Symbols:

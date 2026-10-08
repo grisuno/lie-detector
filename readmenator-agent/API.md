@@ -1,31 +1,83 @@
 # API
 
 ## app.py
-- `OptimizedE8Layer.__init__` (method) `app.py:51` `def __init__(self, in_features, out_features, edge_index, num_nodes)`
-- `OptimizedE8Layer.forward` (method) `app.py:66` `def forward(self, x)`
-- `RESMAv2Fast.__init__` (method) `app.py:76` `def __init__(self, input_dim, hidden_dim, edge_index, num_nodes, dropout)`
-- `RESMAv2Fast.forward` (method) `app.py:99` `def forward(self, x, edge_index)`
-- `RESMAv2Standard.__init__` (method) `app.py:114` `def __init__(self, input_dim, hidden_dim, edge_index, num_nodes, dropout)`
-- `RESMAv2Standard.forward` (method) `app.py:139` `def forward(self, x, edge_index)`
-- `RESMAv2Deep.__init__` (method) `app.py:162` `def __init__(self, input_dim, hidden_dim, edge_index, num_nodes, dropout)`
-- `RESMAv2Deep.forward` (method) `app.py:194` `def forward(self, x, edge_index)`
-- `GAT_Baseline.__init__` (method) `app.py:210` `def __init__(self, input_dim, hidden_dim, dropout)`
-- `GAT_Baseline.forward` (method) `app.py:220` `def forward(self, x, edge_index)`
-- `GAT_Baseline.load_elliptic_data` (method) `app.py:233` `def load_elliptic_data()`
-- `GAT_Baseline.train_and_evaluate` (method) `app.py:290` `def train_and_evaluate(model, X, y, edge_index, train_idx, val_idx, epochs, lr, name, fold)`
-- `GAT_Baseline.cross_validate_model` (method) `app.py:347` `def cross_validate_model(model_class, X, y, edge_index, num_nodes, n_splits, seed, name)`
+
+### load_elliptic_data (method) `def load_elliptic_data()`
+- Defined: `app.py:233`
+
+### train_and_evaluate (method) `def train_and_evaluate(model, X, y, edge_index, train_idx, val_idx, epochs, lr, name, fold)`
+- Defined: `app.py:290`
+
+### cross_validate_model (method) `def cross_validate_model(model_class, X, y, edge_index, num_nodes, n_splits, seed, name)`
+- Defined: `app.py:347`
+
+### __init__ (method) `def __init__(self, in_features, out_features, edge_index, num_nodes)`
+- Defined: `app.py:51`
+
+### forward (method) `def forward(self, x)`
+- Defined: `app.py:66`
+
+### __init__ (method) `def __init__(self, input_dim, hidden_dim, edge_index, num_nodes, dropout)`
+- Defined: `app.py:76`
+
+### forward (method) `def forward(self, x, edge_index)`
+- Defined: `app.py:99`
+
+### __init__ (method) `def __init__(self, input_dim, hidden_dim, edge_index, num_nodes, dropout)`
+- Defined: `app.py:114`
+
+### forward (method) `def forward(self, x, edge_index)`
+- Defined: `app.py:139`
+
+### __init__ (method) `def __init__(self, input_dim, hidden_dim, edge_index, num_nodes, dropout)`
+- Defined: `app.py:162`
+
+### forward (method) `def forward(self, x, edge_index)`
+- Defined: `app.py:194`
+
+### __init__ (method) `def __init__(self, input_dim, hidden_dim, dropout)`
+- Defined: `app.py:210`
+
+### forward (method) `def forward(self, x, edge_index)`
+- Defined: `app.py:220`
 
 ## app_timestamp.py
-- `OptimizedE8Layer.__init__` (method) `app_timestamp.py:25` `def __init__(self, in_features, out_features, edge_index, num_nodes)`
-- `OptimizedE8Layer.forward` (method) `app_timestamp.py:40` `def forward(self, x)`
-- `RESMAv2Fast.__init__` (method) `app_timestamp.py:50` `def __init__(self, input_dim, hidden_dim, edge_index, num_nodes, dropout)`
-- `RESMAv2Fast.forward` (method) `app_timestamp.py:73` `def forward(self, x, edge_index)`
-- `RESMAv2Standard.__init__` (method) `app_timestamp.py:88` `def __init__(self, input_dim, hidden_dim, edge_index, num_nodes, dropout)`
-- `RESMAv2Standard.forward` (method) `app_timestamp.py:113` `def forward(self, x, edge_index)`
-- `RESMAv2Deep.__init__` (method) `app_timestamp.py:136` `def __init__(self, input_dim, hidden_dim, edge_index, num_nodes, dropout)`
-- `RESMAv2Deep.forward` (method) `app_timestamp.py:168` `def forward(self, x, edge_index)`
-- `GAT_Baseline.__init__` (method) `app_timestamp.py:184` `def __init__(self, input_dim, hidden_dim, dropout)`
-- `GAT_Baseline.forward` (method) `app_timestamp.py:194` `def forward(self, x, edge_index)`
-- `GAT_Baseline.load_elliptic_data` (method) `app_timestamp.py:207` `def load_elliptic_data()`
-- `GAT_Baseline.train_and_evaluate` (method) `app_timestamp.py:283` `def train_and_evaluate(model, X, y, edge_index, train_idx, val_idx, epochs, lr, name, fold)`
-- `GAT_Baseline.temporal_cross_validate_model` (method) `app_timestamp.py:345` `def temporal_cross_validate_model(model_class, X, y, edge_index, timestep, num_nodes, name, min_train_ts)`
+
+### load_elliptic_data (method) `def load_elliptic_data()`
+- Defined: `app_timestamp.py:207`
+
+### train_and_evaluate (method) `def train_and_evaluate(model, X, y, edge_index, train_idx, val_idx, epochs, lr, name, fold)`
+- Defined: `app_timestamp.py:283`
+
+### temporal_cross_validate_model (method) `def temporal_cross_validate_model(model_class, X, y, edge_index, timestep, num_nodes, name, min_train_ts)`
+- Defined: `app_timestamp.py:345`
+
+### __init__ (method) `def __init__(self, in_features, out_features, edge_index, num_nodes)`
+- Defined: `app_timestamp.py:25`
+
+### forward (method) `def forward(self, x)`
+- Defined: `app_timestamp.py:40`
+
+### __init__ (method) `def __init__(self, input_dim, hidden_dim, edge_index, num_nodes, dropout)`
+- Defined: `app_timestamp.py:50`
+
+### forward (method) `def forward(self, x, edge_index)`
+- Defined: `app_timestamp.py:73`
+
+### __init__ (method) `def __init__(self, input_dim, hidden_dim, edge_index, num_nodes, dropout)`
+- Defined: `app_timestamp.py:88`
+
+### forward (method) `def forward(self, x, edge_index)`
+- Defined: `app_timestamp.py:113`
+
+### __init__ (method) `def __init__(self, input_dim, hidden_dim, edge_index, num_nodes, dropout)`
+- Defined: `app_timestamp.py:136`
+
+### forward (method) `def forward(self, x, edge_index)`
+- Defined: `app_timestamp.py:168`
+
+### __init__ (method) `def __init__(self, input_dim, hidden_dim, dropout)`
+- Defined: `app_timestamp.py:184`
+
+### forward (method) `def forward(self, x, edge_index)`
+- Defined: `app_timestamp.py:194`
